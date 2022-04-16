@@ -8,8 +8,8 @@ default: &default
 
 development:
   <<: *default
-  database: s_ochi_development
+  database: app_development
 
 test:
   <<: *default
-  database: s_ochi_test
+  database: app_test
