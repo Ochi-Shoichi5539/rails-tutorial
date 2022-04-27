@@ -1,0 +1,10 @@
+<h1><%= t('users.show.title') %></h1>
+<p><%= @user.account %></p1>
+
+<ul>
+  <li><%= link_to t('shared.links.edit'), edit_user_path(@user) %></li>
+  <li><%= button_to t('shared.links.delete'), { id: @user.id}, method: :delete %></li>
+</ul>
+
+<%= link_to t('shared.links.back'), users_path %>
+<%= link_to t('shared.links.logout'), logout_path, method: :delete %>

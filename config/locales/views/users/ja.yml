@@ -1,0 +1,10 @@
+ja:
+  users:
+    index:
+      title: ユーザー一覧画面
+    show:
+      title: ユーザー詳細画面
+    edit:
+      title: ユーザー情報の編集
+    new:
+      title: ユーザー新規登録

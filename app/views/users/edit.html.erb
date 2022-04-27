@@ -1,0 +1,6 @@
+<h1><%= t('users.edit.title') %></h1>
+
+<%= render "form", user: @user %>
+
+<%= link_to t('shared.links.back'), users_path %>
+<%= link_to t('shared.links.logout'), logout_path, method: :delete %>

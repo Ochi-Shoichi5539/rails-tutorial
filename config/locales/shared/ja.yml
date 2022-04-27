@@ -1,0 +1,9 @@
+ja:
+  shared:
+    links:
+      show: 詳細
+      back: 戻る
+      delete: 削除
+      edit: 編集
+      new: 新規登録
+      logout: ログアウト
