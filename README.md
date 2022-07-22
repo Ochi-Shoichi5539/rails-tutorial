@@ -2,18 +2,32 @@
 ## このリポジトリについて
 - rails tutorialアウトプット用のリポジトリです。
 
-## 使い方
-### 環境構築
+## 環境構築方法
+### 1. 本リポジトリをcloneする
 ```
-docker-compose run app rails new . --force --no-deps --database=postgresql
+git clone [本リポジトリのURL]
+```
+### 2. コンテナのビルド
+```
 docker-compose build
-docker-compose up
-docker-compose run app rails db:create
 ```
 
-### コンテナの立ち上げ・コンテナに入る場合
+### 3. データベース作成
 ```
-docker-compose up
-docker exec -it rails_tutorial_app_1 /bin/bash
+docker-compose run app rake db:create
 ```
 
+### 4. コンテナの立ち上げ
+```
+docker-compose up
+```
+
+### 5. コンテナに入る
+```
+docker exec -it [コンテナ名] /bin/bash
+```
+
+### 6. Webpacker Errorが出た時は、以下のコマンドを実行する
+```
+docker-compose run app rails webpacker:install
+```
